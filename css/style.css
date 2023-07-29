@@ -1,0 +1,641 @@
+body {
+    margin: 0;
+    
+   font-family: 'PT Sans', sans-serif;
+    font-size: 27px;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/*Container
+======================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*Header
+*====================*/
+/*use width and hight to adjust images*/
+.header {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    /*to make header primary object and in front of fonts*/
+}
+
+/*suka, don't forget about class!!! when do nav!!!*/
+
+.header__inner {
+    display: flex;
+    padding: 20px 0;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+/*Navigation
+*====================*/
+.nav {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 105px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+.nav__link {
+    margin-left: 40px;
+    
+    color: #000;
+    text-decoration: none;
+    opacity: 0.7;
+    
+    transition: opacity .1s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 100px;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/*Intro
+*====================*/
+
+.first__bg {
+    height: 82px;
+    padding-top: 80px;
+    background: #e4fcfb
+url("/Users/arseniifomicev/Documents/websites/malibu/assets/images/bg_header.png") center no-repeat / cover;
+    /*for alligning this picture to center of it's position and to cover space from left to right border*/  
+}
+
+.second__bg {
+    display: flex;
+    position: relative;
+    height: 535px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets/images/SYT_182422-e.jpg") center no-repeat / cover;
+    background-position: 50% 56%;
+    box-shadow: 1px 1px 5px 1px #646363;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding-top: 368px;
+}
+
+.intro_title {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 80%;
+}
+
+.intro_title_2 {
+    font-size: 46px;
+    color: #00cccc;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+/* Button to sign shedule*/
+
+.sign_box {
+    width: 100%;
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign_button {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 35px;
+    border-radius: 2px;
+    transition: background .1s linear;
+}
+
+.butn--red {
+    background-color: #d9936a;
+}
+
+.sign_button:hover {
+    background-color: #d98452;
+    color: #000;
+}
+
+.container_2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bg_for_welcome {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets/images/welcome_rectangle.png") center no-repeat / cover;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    margin-right: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features_text {
+    font-size: 26px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h4 {
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 0;
+    font-weight: bold;
+    color: #00cccc;
+}
+
+h5 {
+    display: block;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 0;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+}
+
+.container_3 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.adjustment {
+    margin-bottom: 15px;
+}
+
+.elements_items {
+    display: flex;
+    width: 33.33333%;
+}
+
+.elements {
+    display: flex;
+    margin: 50px 0px;
+}
+
+.elements_background {
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets/images/welcome_rectangle-1.png") center no-repeat / cover;
+    background-size: 100% 100%;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 5px 5px 1px #646363;
+}
+
+.center_image {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.elements_title_special {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.elements_title {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.elements_text {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.final_constructor {
+    height: 82px;
+    background: #e4fcfb;
+}
+
+.link_final {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    opacity: 0.7;
+    
+    transition: opacity .1s linear;
+}
+
+.link_final:hover {
+    opacity: 1;
+}
+
+.link_final_2 {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000;
+}
+
+.container_for_final {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 82px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.soho_name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.second__bg__soho {
+    display: flex;
+    position: relative;
+    height: 535px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/6088841.jpg") center no-repeat / cover;
+    background-position: 50% 75%;
+    box-shadow: 1px 1px 5px 1px #646363;
+}
+
+.nav_soho {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right:  105px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.nav__link__soho {
+    margin-left: 40px;
+    
+    color: #000;
+    text-decoration: none;
+    opacity: 0.7;
+    
+    transition: opacity .1s linear;
+}
+
+.nav__link__soho:first-child {
+    margin-left: 86px;
+}
+
+.nav__link__soho:hover {
+    opacity: 1;
+}
+
+.intro_title_2_soho {
+    font-size: 46px;
+    color: #f1966d;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.first__bg__soho {
+    height: 82px;
+    padding-top: 80px;
+    background: #f1966d
+    /*for alligning this picture to center of it's position and to cover space from left to right border*/  
+}
+
+.sign_button_soho {
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 35px;
+    border-radius: 2px;
+    transition: background .1s linear;
+}
+
+.butn--red_soho {
+    background-color: #f1966d;
+}
+
+.sign_button_soho:hover {
+    background-color: #f08453;
+    color: #fff;
+}
+    
+.bg_for_welcome_soho {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/welcome_rectangle_soho.png") center no-repeat / cover;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    margin-right: 10px;
+}
+
+.features_title_soho {
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 0;
+    font-weight: bold;
+    color: #f08453;
+}
+
+.adjustment_soho {
+    margin-bottom: 15px;
+    height: 365px;
+}
+
+.elements_background_soho {
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets/images/welcome_rectangle_soho_test-1.png") center no-repeat / cover;
+    background-size: 100% 100%;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 5px 5px 1px #646363;
+}
+
+.final_constructor_soho {
+    height: 82px;
+    background: #f1966d;
+}
+
+.elements_items_more {
+    width: 80%;
+    min-height: 250px;
+    background:linear-gradient(to bottom right, white, #ffede0);
+    margin-left: 10%;
+}
+
+.elements_items_less {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/10173380.png") center no-repeat / cover;
+    float: left;
+}
+
+.elements_items_more_level {
+    width: 80%;
+    min-height: 250px;
+    background:linear-gradient(to bottom right, #ffede0, white);
+    float: left;
+}
+
+.elements_items_less_level {
+    width: 20%;
+    min-height: 250px;
+    height: 200px;
+    width: 350px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/png-transparent-cocktail-emoji-drink-noto-fonts-drink-food-orange-flower.png") center no-repeat / cover;
+    float: right;
+    margin-left: 10%;
+}
+
+.features_title_all {
+    display: block;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 0;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+}
+
+.weather {
+    display: block;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 0;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.7;
+    
+    transition: opacity .1s linear;
+}
+
+.weather:hover {
+    opacity: 1;
+    color: #f08453;
+}
+
+.elements_items_less_last {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/confetti-2-xxl.png") center no-repeat / cover;
+    float: left;
+}
+
+.elements_items_less_calvin {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/calvin-klein-boxer-3-pack.jpg") center no-repeat / cover;
+    float: left;
+}
+
+.elements_items_less_gillette {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/6490803460.jpg") center no-repeat / cover;
+    float: left;
+}
+
+.elements_items_less_mach3 {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/6490803459.jpg") center no-repeat / cover;
+    float: left;
+}
+
+.elements_items_less_socks {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/caiq5dj531dsn13mrqqg.jpg") center no-repeat / cover;
+    float: left;
+}
+
+.elements_items_less_youtube {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/Unknown.png") center no-repeat / cover;
+    float: left;
+}
+
+div.image_link img {
+    margin-left: 10px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+div.image_link_2 img {
+    margin-left: 60px;
+    margin-right: 50px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.elements_items_less_board {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/ULTIMATE-LONGBOARD-SURFBOARD-ORANGE-CAMO-_HYBRID-EPOXY-SOFTTOP_a7f8b736-97bd-4e41-989d-3aabf05dc4f2.jpg.webp") center no-repeat / cover;
+    float: left;
+}
+
+.elements_items_less_price {
+    width: 20%;
+    min-height: 250px;
+    height: 200px;
+    width: 350px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/scruge.png") center no-repeat / cover;
+    float: right;
+    margin-left: 10%;
+}
+
+.elements_items_less_woman {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/woman-with-surfboard-beach_637458-541.png") center no-repeat / cover;
+    float: left;
+}
+
+.elements_items_less_reasons {
+    width: 20%;
+    min-height: 250px;
+    height: 750px;
+    width: 350px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/Untitled-1.png") center no-repeat / cover;
+    float: right;
+    margin-left: 10%;
+}
+
+.elements_items_less_man {
+    width: 20%;
+    min-height: 250px;
+    height: 250px;
+    width: 250px;
+    background: url("/Users/arseniifomicev/Documents/websites/malibu/assets_Soho/images_Soho/el_capitan.png") center no-repeat / cover;
+    float: left;
+}
+
+.center_image {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 150px;
+    margin-bottom: 20px;
+}
